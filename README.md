@@ -16,6 +16,6 @@ Using multiple wallets help with nonce and bundle conflicts, it's much efficient
 ### Use case
 For learning and reusing components such as a uni v2 token tax checker, a generalized framework for arbitrage, etc...
 
-### This is a fork of https://github.com/duoxehyon/univ2-tri-arb.git, I added V3 Dexes, An OffChain Simulator to prevent malicious smart contracts and some other Improvements
+
 
 

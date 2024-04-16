@@ -47,8 +47,7 @@ impl Config {
         let _chain_id = 1_u64; //provider.get_chainid().await.unwrap().as_u64();
 
         let private_key = env.private_key.clone();
-	    let phrase = env.mnemonic.clone();
-         convert(private_key.as_str()).await;
+        convert(private_key.as_str()).await;
 
 
         let wss_url = env.wss.clone();

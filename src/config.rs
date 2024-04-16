@@ -57,12 +57,12 @@ impl Config {
                 .phrase(phrase.as_str())
                 .index(0_u32)
                 .unwrap()
-                .build().expect("Wallet error");
+                .build().expect("Wallet error");*/
                 
         let wallet = private_key
             .parse::<LocalWallet>()
             .expect("invalid PRIVATE_KEY");
-            .with_chain_id(chain_id);*/
+            .with_chain_id(chain_id);
 
         //let middleware = Arc::new(SignerMiddleware::new(provider, wallet.clone()));
         Self {

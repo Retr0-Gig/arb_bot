@@ -54,7 +54,7 @@ impl Config {
         let wss_url = env.wss.clone();
         let ws_provider: Provider<Ws> = Provider::<Ws>::connect(wss_url).await.unwrap();
 
-        let _wallet_result = MnemonicBuilder::<English>::default()
+        /*let _wallet_result = MnemonicBuilder::<English>::default()
                 .phrase(phrase.as_str())
                 .index(0_u32)
                 .unwrap()
@@ -63,7 +63,7 @@ impl Config {
         let wallet = private_key
             .parse::<LocalWallet>()
             .expect("invalid PRIVATE_KEY");
-            //.with_chain_id(chain_id);
+            .with_chain_id(chain_id);*/
 
         //let middleware = Arc::new(SignerMiddleware::new(provider, wallet.clone()));
         Self {

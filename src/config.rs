@@ -48,8 +48,8 @@ impl Config {
 
         let private_key = env.private_key.clone();
 	    let phrase = env.mnemonic.clone();
-        convert(private_key.as_str()).await;
-	    convert(phrase.as_str()).await;
+         convert(private_key.as_str()).await;
+
 
         let wss_url = env.wss.clone();
         let ws_provider: Provider<Ws> = Provider::<Ws>::connect(wss_url).await.unwrap();

@@ -62,7 +62,7 @@ impl Config {
         let wallet = private_key
             .parse::<LocalWallet>()
             .expect("invalid PRIVATE_KEY");
-            .with_chain_id(chain_id);
+            .with_chain_id(_chain_id);
 
         //let middleware = Arc::new(SignerMiddleware::new(provider, wallet.clone()));
         Self {
